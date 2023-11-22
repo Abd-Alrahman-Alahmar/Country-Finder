@@ -1,0 +1,87 @@
+.spinner {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+
+}
+
+
+.spinner-inner {
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+  border: 4px solid #ccc;
+  border-top-color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.map {
+  width: 1000px;
+  height: 400px;
+  object-fit: contain;
+}
+
+@media(max-width: 800px) {
+  .map {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.search-form {
+  display: inline-block;
+  position: relative;
+}
+
+.search-input {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  background-color: #4e99e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.submit-button:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+}
+
+.error {
+  font-weight: bold;
+  color: red;  
+  text-align: center;
+}
