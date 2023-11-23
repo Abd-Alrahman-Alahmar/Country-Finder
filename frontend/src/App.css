@@ -59,7 +59,10 @@
   border: none;
   border-radius: 20px;
   box-shadow: 0 0 10px #0000001a;
+  -webkit-box-shadow: 0 0 10px #0000001a;
   -webkit-text-size-adjust: 100%;
+  -webkit-appearance: none;
+  appearance: none;
 
 }
 
