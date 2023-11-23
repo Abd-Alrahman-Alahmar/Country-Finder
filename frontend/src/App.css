@@ -58,7 +58,9 @@
   padding: 10px;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #0000001a;
+  -webkit-text-size-adjust: 100%;
+
 }
 
 .submit-button {
@@ -82,6 +84,6 @@
 
 .error {
   font-weight: bold;
-  color: red;  
+  color: red;
   text-align: center;
 }
